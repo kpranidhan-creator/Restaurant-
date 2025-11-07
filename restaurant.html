@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delicious Bites Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #faf8f4;
+            color: #333;
+        }
+        header {
+            background: #d35400;
+            color: #fff;
+            padding: 1.5em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #f6e58d;
+            padding: 0.5em 0;
+        }
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #d35400;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2em auto;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.06);
+        }
+        h2 {
+            color: #d35400;
+            margin-bottom: 0.7em;
+        }
+        .menu-section {
+            margin-bottom: 2em;
+        }
+        .menu-list {
+            list-style: none;
+            padding: 0;
+        }
+        .menu-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5em 0;
+            border-bottom: 1px solid #eee;
+        }
+        .menu-list li:last-child {
+            border-bottom: none;
+        }
+        footer {
+            background: #d35400;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 3em;
+        }
+        .reservation-form {
+            margin-top: 1em;
+        }
+        .reservation-form input, .reservation-form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin: 0.2em 0 1em 0;
+            border: 1px solid #dfe4ea;
+            border-radius: 4px;
+        }
+        .reservation-form button {
+            background: #d35400;
+            color: #fff;
+            padding: 0.7em 1.2em;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .reservation-form button:hover {
+            background: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Bites Restaurant</h1>
+        <p>Your favorite place for great food and unforgettable moments!</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Delicious Bites Restaurant, where passion meets flavor! Established in 2010, we are dedicated to providing our customers with delicious dishes, warm hospitality, and a cozy atmosphere. Join us for breakfast, lunch, or dinner and enjoy a memorable dining experience!</p>
+        </section>
+        <section id="menu" class="menu-section">
+            <h2>Menu</h2>
+            <ul class="menu-list">
+                <li>
+                    <span>Grilled Chicken Salad</span>
+                    <span>$9.99</span>
+                </li>
+                <li>
+                    <span>Vegetarian Pasta</span>
+                    <span>$11.99</span>
+                </li>
+                <li>
+                    <span>Classic Burger</span>
+                    <span>$8.49</span>
+                </li>
+                <li>
+                    <span>Tomato Soup</span>
+                    <span>$5.99</span>
+                </li>
+                <li>
+                    <span>Chocolate Lava Cake</span>
+                    <span>$6.49</span>
+                </li>
+            </ul>
+        </section>
+        <section id="reservation">
+            <h2>Reservation</h2>
+            <p>Book a table easily by filling out the form below.</p>
+            <form class="reservation-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="date" name="date" required>
+                <input type="time" name="time" required>
+                <input type="number" name="party" placeholder="Number of Guests" min="1" required>
+                <textarea name="notes" placeholder="Special Requests (optional)"></textarea>
+                <button type="submit">Reserve Now</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><strong>Address:</strong> 123 Main St, YourCity, Country</p>
+            <p><strong>Phone:</strong> +1 555-1234-567</p>
+            <p><strong>Email:</strong> info@deliciousbites.com</p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Delicious Bites Restaurant. All rights reserved.
+    </footer>
+</body>
+</html>
